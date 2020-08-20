@@ -1,0 +1,379 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container">
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" 			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel cdm_admin_maestro_documentos edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class=" 			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class="r-edit-form" cellpadding="0" cellspacing="0" {$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+	
+			data-last-cell="true"
+		
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Codigo_Estructura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Codigo_Estructura}  r-vertical-field" data-fieldname="Codigo_Estructura" data-signal-error-for="Codigo_Estructura{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Codigo_Estructura" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Codigo_Estructura}">
+		
+		{BEGIN Codigo_Estructura_label}{$label cdm_admin_maestro_documentos Codigo_Estructura }{END Codigo_Estructura_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Codigo_Estructura_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Codigo_Estructura">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Codigo_Estructura_fieldblock}
+											
+{BEGIN Area_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Area}  r-vertical-field" data-fieldname="Area" data-signal-error-for="Area{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Area" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Area}">
+		
+		{BEGIN Area_label}{$label cdm_admin_maestro_documentos Area }{END Area_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Area_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Area">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Area_fieldblock}
+											
+{BEGIN Tipo_Documento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Tipo_Documento}  r-vertical-field" data-fieldname="Tipo_Documento" data-signal-error-for="Tipo_Documento{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Tipo_Documento" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Tipo_Documento}">
+		
+		{BEGIN Tipo_Documento_label}{$label cdm_admin_maestro_documentos Tipo_Documento }{END Tipo_Documento_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Tipo_Documento_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Tipo_Documento">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Tipo_Documento_fieldblock}
+											
+{BEGIN Descripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Descripcion}  r-vertical-field" data-fieldname="Descripcion" data-signal-error-for="Descripcion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Descripcion" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Descripcion}">
+		
+		{BEGIN Descripcion_label}{$label cdm_admin_maestro_documentos Descripcion }{END Descripcion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Descripcion_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Descripcion">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Descripcion_fieldblock}
+											
+{BEGIN DescripcionAmplia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DescripcionAmplia}  r-vertical-field" data-fieldname="DescripcionAmplia" data-signal-error-for="DescripcionAmplia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="DescripcionAmplia" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_DescripcionAmplia}">
+		
+		{BEGIN DescripcionAmplia_label}{$label cdm_admin_maestro_documentos DescripcionAmplia }{END DescripcionAmplia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$DescripcionAmplia_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="DescripcionAmplia">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END DescripcionAmplia_fieldblock}
+											
+{BEGIN Ingresado_Por_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Ingresado_Por}  r-vertical-field" data-fieldname="Ingresado_Por" data-signal-error-for="Ingresado_Por{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Ingresado_Por" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Ingresado_Por}">
+		
+		{BEGIN Ingresado_Por_label}{$label cdm_admin_maestro_documentos Ingresado_Por }{END Ingresado_Por_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Ingresado_Por_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Ingresado_Por">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Ingresado_Por_fieldblock}
+											
+{BEGIN Fecha_Ingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Fecha_Ingreso}  r-vertical-field" data-fieldname="Fecha_Ingreso" data-signal-error-for="Fecha_Ingreso{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Fecha_Ingreso" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Fecha_Ingreso}">
+		
+		{BEGIN Fecha_Ingreso_label}{$label cdm_admin_maestro_documentos Fecha_Ingreso }{END Fecha_Ingreso_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Fecha_Ingreso_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Fecha_Ingreso">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Fecha_Ingreso_fieldblock}
+											
+{BEGIN Estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Estado}  r-vertical-field" data-fieldname="Estado" data-signal-error-for="Estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Estado" >
+
+	<div class="">
+
+	<label class="col-md-offset-3 col-md-6 control-label" for="{$labelfor_Estado}">
+		
+		{BEGIN Estado_label}{$label cdm_admin_maestro_documentos Estado }{END Estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Estado_editcontrol}	</div>
+	<div class="col-md-offset-3 col-md-6" data-helpfor="Estado">
+		<div class="text-muted" >
+				</div>
+	</div>
+
+	</div>
+	
+</div>
+
+
+{END Estado_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c" data-pageid="{$pageid}"	{$cell_below-grid_c}
+	class=" 			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c3" data-pageid="{$pageid}"	{$cell_below-grid_c3}
+	class="r-align-right 			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}">
+	<span class="dropdown">
+		<button type="button" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" >
+				<a  {$resetbutton_attrs} >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" >
+				<a  {$view_page_button_attrs} >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

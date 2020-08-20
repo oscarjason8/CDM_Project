@@ -1,0 +1,528 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container">
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" 			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel v_docaprob_aprob search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class="r-edit-form" cellpadding="0" cellspacing="0" {$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+	
+			data-last-cell="true"
+		
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN revision_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_revision}  form-horizontal clearfix" data-fieldname="revision" data-signal-error-for="revision{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="revision" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_revision}">
+		{$label v_docaprob_aprob revision }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_revision}
+	</div>
+	<div class="col-md-4 " >
+		{$revision_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$revision_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END revision_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  form-horizontal clearfix" data-fieldname="estado" data-signal-error-for="estado{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="estado" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_estado}">
+		{$label v_docaprob_aprob estado }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_estado}
+	</div>
+	<div class="col-md-4 " >
+		{$estado_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$estado_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END estado_fieldblock}
+											
+{BEGIN documento_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documento}  form-horizontal clearfix" data-fieldname="documento" data-signal-error-for="documento{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="documento" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_documento}">
+		{$label v_docaprob_aprob documento }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_documento}
+	</div>
+	<div class="col-md-4 " >
+		{$documento_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$documento_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END documento_fieldblock}
+											
+{BEGIN usuario_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usuario}  form-horizontal clearfix" data-fieldname="usuario" data-signal-error-for="usuario{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="usuario" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_usuario}">
+		{$label v_docaprob_aprob usuario }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_usuario}
+	</div>
+	<div class="col-md-4 " >
+		{$usuario_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$usuario_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END usuario_fieldblock}
+											
+{BEGIN fecha_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha}  form-horizontal clearfix" data-fieldname="fecha" data-signal-error-for="fecha{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="fecha" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_fecha}">
+		{$label v_docaprob_aprob fecha }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_fecha}
+	</div>
+	<div class="col-md-4 " >
+		{$fecha_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$fecha_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END fecha_fieldblock}
+											
+{BEGIN borrador_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_borrador}  form-horizontal clearfix" data-fieldname="borrador" data-signal-error-for="borrador{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="borrador" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_borrador}">
+		{$label v_docaprob_aprob borrador }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_borrador}
+	</div>
+	<div class="col-md-4 " >
+		{$borrador_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$borrador_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END borrador_fieldblock}
+											
+{BEGIN Descartar_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Descartar}  form-horizontal clearfix" data-fieldname="Descartar" data-signal-error-for="Descartar{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="Descartar" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_Descartar}">
+		{$label v_docaprob_aprob Descartar }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_Descartar}
+	</div>
+	<div class="col-md-4 " >
+		{$Descartar_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$Descartar_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END Descartar_fieldblock}
+											
+{BEGIN descripcion_calidad_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripcion_calidad}  form-horizontal clearfix" data-fieldname="descripcion_calidad" data-signal-error-for="descripcion_calidad{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="descripcion_calidad" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_descripcion_calidad}">
+		{$label v_docaprob_aprob descripcion_calidad }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_descripcion_calidad}
+	</div>
+	<div class="col-md-4 " >
+		{$descripcion_calidad_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$descripcion_calidad_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END descripcion_calidad_fieldblock}
+											
+{BEGIN descripcion_aprobador_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descripcion_aprobador}  form-horizontal clearfix" data-fieldname="descripcion_aprobador" data-signal-error-for="descripcion_aprobador{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="descripcion_aprobador" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_descripcion_aprobador}">
+		{$label v_docaprob_aprob descripcion_aprobador }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_descripcion_aprobador}
+	</div>
+	<div class="col-md-4 " >
+		{$descripcion_aprobador_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$descripcion_aprobador_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END descripcion_aprobador_fieldblock}
+											
+{BEGIN editado_por_calidad_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_editado_por_calidad}  form-horizontal clearfix" data-fieldname="editado_por_calidad" data-signal-error-for="editado_por_calidad{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="editado_por_calidad" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_editado_por_calidad}">
+		{$label v_docaprob_aprob editado_por_calidad }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_editado_por_calidad}
+	</div>
+	<div class="col-md-4 " >
+		{$editado_por_calidad_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$editado_por_calidad_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END editado_por_calidad_fieldblock}
+											
+{BEGIN editado_por_aprobador_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_editado_por_aprobador}  form-horizontal clearfix" data-fieldname="editado_por_aprobador" data-signal-error-for="editado_por_aprobador{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="editado_por_aprobador" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_editado_por_aprobador}">
+		{$label v_docaprob_aprob editado_por_aprobador }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_editado_por_aprobador}
+	</div>
+	<div class="col-md-4 " >
+		{$editado_por_aprobador_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$editado_por_aprobador_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END editado_por_aprobador_fieldblock}
+											
+{BEGIN fecha_edicion_calidad_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_edicion_calidad}  form-horizontal clearfix" data-fieldname="fecha_edicion_calidad" data-signal-error-for="fecha_edicion_calidad{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="fecha_edicion_calidad" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_fecha_edicion_calidad}">
+		{$label v_docaprob_aprob fecha_edicion_calidad }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_fecha_edicion_calidad}
+	</div>
+	<div class="col-md-4 " >
+		{$fecha_edicion_calidad_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$fecha_edicion_calidad_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END fecha_edicion_calidad_fieldblock}
+											
+{BEGIN fecha_edicion_aprobador_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_edicion_aprobador}  form-horizontal clearfix" data-fieldname="fecha_edicion_aprobador" data-signal-error-for="fecha_edicion_aprobador{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="fecha_edicion_aprobador" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_fecha_edicion_aprobador}">
+		{$label v_docaprob_aprob fecha_edicion_aprobador }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_fecha_edicion_aprobador}
+	</div>
+	<div class="col-md-4 " >
+		{$fecha_edicion_aprobador_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$fecha_edicion_aprobador_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END fecha_edicion_aprobador_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c" data-pageid="{$pageid}"	{$cell_below-grid_c}
+	class=" 			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

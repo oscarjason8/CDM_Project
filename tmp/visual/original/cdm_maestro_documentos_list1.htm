@@ -1,0 +1,1101 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+						{BEGIN supertop_block}
+<nav class="navbar navbar-default
+	bs-fullwidth-navbar
+" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+			 
+				<span data-cellId="supertop_c" data-pageid="{$pageid}" class="r-align-left  navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c" data-pageid="{$pageid}" class="r-align-left  navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+				 
+			 
+				<span class="navbar-form r-align-right  navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}">
+	<span class="dropdown">
+		<button type="button" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" >
+				<a  href="#" {$logoutlink_attrs} >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" >
+				<a  href="admin_rights_list.php" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+		 
+				<span class="navbar-form r-align-right  navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right  navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}">
+	<span class="dropdown">
+		<button type="button" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span} >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" >
+				<a  id="showOptPanel{$id}" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" >
+				<a  id="hideOptPanel{$id}" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right  navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+					</nav>
+{END supertop_block}
+			
+		<div class="bs-middle">
+			<div class="bs-topmiddle clearfix">
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" 			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c3" data-pageid="{$pageid}"	{$cell_top_c3}
+	class=" 			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+	</div>		
+{END top_block}
+				</div>
+			<div class="bs-left" {$blockattr_left} {$form_left} >
+								{BEGIN left_block}
+<table class="r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class=" r-ori-vert"
+			 
+	data-cellId="left_c" data-pageid="{$pageid}">
+ 
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+	<!-- Search panel content -->
+	
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+		
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+	
+		
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+				
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_Fecha_Ingreso}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Fecha_Ingreso}" {$filterRow_attrs_Fecha_Ingreso}>
+			<label>{$label cdm_maestro_documentos Fecha_Ingreso }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Fecha_Ingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Fecha_Ingreso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Fecha_Ingreso}</span>
+						</div>
+		{END searchCtrlBlock_Fecha_Ingreso}
+																{BEGIN searchCtrlBlock_Ingresado_Por}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Ingresado_Por}" {$filterRow_attrs_Ingresado_Por}>
+			<label>{$label cdm_maestro_documentos Ingresado_Por }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Ingresado_Por}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Ingresado_Por}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Ingresado_Por}</span>
+						</div>
+		{END searchCtrlBlock_Ingresado_Por}
+																{BEGIN searchCtrlBlock_DescripcionAmplia}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_DescripcionAmplia}" {$filterRow_attrs_DescripcionAmplia}>
+			<label>{$label cdm_maestro_documentos DescripcionAmplia }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_DescripcionAmplia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_DescripcionAmplia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_DescripcionAmplia}</span>
+						</div>
+		{END searchCtrlBlock_DescripcionAmplia}
+																{BEGIN searchCtrlBlock_Descripcion}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Descripcion}" {$filterRow_attrs_Descripcion}>
+			<label>{$label cdm_maestro_documentos Descripcion }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Descripcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Descripcion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Descripcion}</span>
+						</div>
+		{END searchCtrlBlock_Descripcion}
+																{BEGIN searchCtrlBlock_Tipo_Documento}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Tipo_Documento}" {$filterRow_attrs_Tipo_Documento}>
+			<label>{$label cdm_maestro_documentos Tipo_Documento }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Tipo_Documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Tipo_Documento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Tipo_Documento}</span>
+						</div>
+		{END searchCtrlBlock_Tipo_Documento}
+																{BEGIN searchCtrlBlock_Area}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Area}" {$filterRow_attrs_Area}>
+			<label>{$label cdm_maestro_documentos Area }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Area}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Area}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Area}</span>
+						</div>
+		{END searchCtrlBlock_Area}
+																{BEGIN searchCtrlBlock_Codigo_Estructura}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Codigo_Estructura}" {$filterRow_attrs_Codigo_Estructura}>
+			<label>{$label cdm_maestro_documentos Codigo_Estructura }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Codigo_Estructura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Codigo_Estructura}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Codigo_Estructura}</span>
+						</div>
+		{END searchCtrlBlock_Codigo_Estructura}
+																{BEGIN searchCtrlBlock_Codigo}
+		
+		
+		<div class="form-group srchPanelRow {$filterRow_class_Codigo}" {$filterRow_attrs_Codigo}>
+			<label>{$label cdm_maestro_documentos Codigo }</label>
+			
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Codigo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Codigo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Codigo}</span>
+						</div>
+		{END searchCtrlBlock_Codigo}
+		
+
+	</div>
+	
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+
+</td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END left_block}
+				</div>
+			<div class="bs-center bs-screenwidth bs-minwidth">
+								{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class=" 			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" {$addlink_attrs} href="cdm_maestro_documentos_add.php" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class="r-align-right 			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" >
+{$records_indicator}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span class="bs-printpanel" id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				<li class="container-fluid">
+					<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="cdm_maestro_documentos_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="cdm_maestro_documentos_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>				</li>
+								<li class="divider" role="separator"></li>
+															 
+				<li class="container-fluid">
+					<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				</li>
+								<li class="divider" role="separator"></li>
+															 
+				<li class="container-fluid">
+					<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				</li>
+										</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+					
+				<div class="bs-grid">
+								{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <UL class="nav nav-tabs">
+	{$grid_tabs_content}
+  </UL>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media (max-width: 767px) {
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="IDNUM"]:before {
+		content: "{$label cdm_maestro_documentos IDNUM}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Codigo"]:before {
+		content: "{$label cdm_maestro_documentos Codigo}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Codigo_Estructura"]:before {
+		content: "{$label cdm_maestro_documentos Codigo_Estructura}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Area"]:before {
+		content: "{$label cdm_maestro_documentos Area}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Tipo_Documento"]:before {
+		content: "{$label cdm_maestro_documentos Tipo_Documento}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Numero_Documento"]:before {
+		content: "{$label cdm_maestro_documentos Numero_Documento}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Descripcion"]:before {
+		content: "{$label cdm_maestro_documentos Descripcion}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="DescripcionAmplia"]:before {
+		content: "{$label cdm_maestro_documentos DescripcionAmplia}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Ingresado_Por"]:before {
+		content: "{$label cdm_maestro_documentos Ingresado_Por}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Fecha_Ingreso"]:before {
+		content: "{$label cdm_maestro_documentos Fecha_Ingreso}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Editado_Por"]:before {
+		content: "{$label cdm_maestro_documentos Editado_Por}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Fecha_Edicion"]:before {
+		content: "{$label cdm_maestro_documentos Fecha_Edicion}";
+	}
+	
+}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  bs-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" data-brick="grid" }
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								bs-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head1" {$item_grid_checkbox_head1} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Codigo_fieldheadercolumn}
+	{BEGIN Codigo_fieldheader}
+	<SPAN {$Codigo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Codigo">
+	{$label cdm_maestro_documentos Codigo }	</SPAN>
+	{END Codigo_fieldheader}
+{END Codigo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Ingresado_Por_fieldheadercolumn}
+	{BEGIN Ingresado_Por_fieldheader}
+	<SPAN {$Ingresado_Por_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Ingresado_Por">
+	{$label cdm_maestro_documentos Ingresado_Por }	</SPAN>
+	{END Ingresado_Por_fieldheader}
+{END Ingresado_Por_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Fecha_Ingreso_fieldheadercolumn}
+	{BEGIN Fecha_Ingreso_fieldheader}
+	<SPAN {$Fecha_Ingreso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Ingreso">
+	{$label cdm_maestro_documentos Fecha_Ingreso }	</SPAN>
+	{END Fecha_Ingreso_fieldheader}
+{END Fecha_Ingreso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+							</tr>
+					 
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+									<tbody>
+			{BEGIN grid_row}
+					
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								bs-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a type="button" class="btn-link   
+	 glyphicon glyphicon-pencil" href="cdm_maestro_documentos_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view1" {$item_grid_view1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a type="button" class="btn-link   
+	 glyphicon glyphicon-search" href="cdm_maestro_documentos_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox1" {$item_grid_checkbox1} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+						<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link1" {$item_grid_alldetails_link1} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Mostrar detalles"
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
+	 
+		
+
+	{BEGIN cdm_documento_dtable_link}
+	<a data-itemtype="grid_details_link" data-itemid="grid_details_link4" {$item_grid_details_link4} data-pageid="{$pageid}" data-record-id="{$recId}" class="{$cdm_documento_dlink_class}" {$cdm_documento_link_attrs} 
+		data-short-details="cdm_documento"
+	>
+								
+									{BEGIN cdm_documento_childcount}
+				<span class="details-badge badge cdm_documento_badge" {$cdm_documento_childnumber_attr}>
+					{$cdm_documento_childnumber}				
+				</span>
+				{END cdm_documento_childcount}
+						</a>
+	{END cdm_documento_dtable_link}
+
+
+
+
+
+
+	 
+		
+
+	{BEGIN Documentos_Rechazados_dtable_link}
+	<a data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}" class="" {$Documentos_Rechazados_link_attrs} 
+		data-short-details="Documentos_Rechazados"
+	>
+						Documentos Rechazados		
+									<span {$Documentos_Rechazados_childnumber_attr} dir="ltr">
+					{BEGIN Documentos_Rechazados_childcount}({$Documentos_Rechazados_childnumber}){END Documentos_Rechazados_childcount}
+				</span>
+						</a>
+	{END Documentos_Rechazados_dtable_link}
+
+
+
+
+
+
+	 
+		
+
+	{BEGIN Documentos_Aprobados_dtable_link}
+	<a data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}" class="" {$Documentos_Aprobados_link_attrs} 
+		data-short-details="Documentos_Aprobados"
+	>
+						Documentos Aprobados		
+									<span {$Documentos_Aprobados_childnumber_attr} dir="ltr">
+					{BEGIN Documentos_Aprobados_childcount}({$Documentos_Aprobados_childnumber}){END Documentos_Aprobados_childcount}
+				</span>
+						</a>
+	{END Documentos_Aprobados_dtable_link}
+
+
+
+
+
+
+	 
+		
+
+	{BEGIN Historial_de_Documentos_dtable_link}
+	<a data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}" class="" {$Historial_de_Documentos_link_attrs} 
+		data-short-details="Historial_de_Documentos"
+	>
+						Historial De Documentos		
+									<span {$Historial_de_Documentos_childnumber_attr} dir="ltr">
+					{BEGIN Historial_de_Documentos_childcount}({$Historial_de_Documentos_childnumber}){END Historial_de_Documentos_childcount}
+				</span>
+						</a>
+	{END Historial_de_Documentos_dtable_link}
+
+
+
+
+
+
+	
+	</td>
+					 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Codigo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Codigo" >
+{$Codigo_value}
+</span>
+{END Codigo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Ingresado_Por_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Ingresado_Por" >
+{$Ingresado_Por_value}
+</span>
+{END Ingresado_Por_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Fecha_Ingreso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Ingreso" >
+{$Fecha_Ingreso_value}
+</span>
+{END Fecha_Ingreso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+							</tr>
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+								
+							">
+				 
+					{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="cdm_documento"
+			data-details-cdm_documento	>
+		<span data-details-inside data-short-table="cdm_documento">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+					 
+					
+					{END grid_row}
+			</tbody>
+									<tfoot>
+			{BEGIN totals_row}
+					
+		 
+					 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_3} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								bs-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="cdm_maestro_documentos_list1"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+							</tr>
+					
+					{END totals_row}
+			</tfoot>
+				</table>
+{END grid_block}
+					</div>
+				
+								{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c" data-pageid="{$pageid}"	{$cell_below-grid_c}
+	class="r-align-center 			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+					
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

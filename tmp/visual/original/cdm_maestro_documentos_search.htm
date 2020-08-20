@@ -1,0 +1,249 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		
+		<div class="container">
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" 			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel cdm_maestro_documentos search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class="r-edit-form" cellpadding="0" cellspacing="0" {$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+	
+			data-last-cell="true"
+		
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN indexacion_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_indexacion}  form-horizontal clearfix" data-fieldname="indexacion" data-signal-error-for="indexacion{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="indexacion" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_indexacion}">
+		{$label cdm_maestro_documentos indexacion }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_indexacion}
+	</div>
+	<div class="col-md-4 " >
+		{$indexacion_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$indexacion_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END indexacion_fieldblock}
+											
+{BEGIN almac_dep_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_almac_dep}  form-horizontal clearfix" data-fieldname="almac_dep" data-signal-error-for="almac_dep{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="almac_dep" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_almac_dep}">
+		{$label cdm_maestro_documentos almac_dep }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_almac_dep}
+	</div>
+	<div class="col-md-4 " >
+		{$almac_dep_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$almac_dep_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END almac_dep_fieldblock}
+											
+{BEGIN disp_final_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_disp_final}  form-horizontal clearfix" data-fieldname="disp_final" data-signal-error-for="disp_final{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="disp_final" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_disp_final}">
+		{$label cdm_maestro_documentos disp_final }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_disp_final}
+	</div>
+	<div class="col-md-4 " >
+		{$disp_final_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$disp_final_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END disp_final_fieldblock}
+											
+{BEGIN otro_fieldblock}
+
+<!--
+<div class="container form-horizontal">
+--> 
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_otro}  form-horizontal clearfix" data-fieldname="otro" data-signal-error-for="otro{$id}" data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="otro" >
+
+	
+	<label class="col-md-2  control-label" for="{$labelfor_otro}">
+		{$label cdm_maestro_documentos otro }	</label>
+	<div class="col-md-2 bs-srchoption">
+		{$searchtype_otro}
+	</div>
+	<div class="col-md-4 " >
+		{$otro_editcontrol}	</div>
+	<div class="col-md-4 " >
+		{$otro_editcontrol1}
+	</div>
+
+
+
+		
+</div>
+
+<!--
+</div>
+-->
+
+{END otro_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c" data-pageid="{$pageid}"	{$cell_below-grid_c}
+	class=" 			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}">
+	<a type="button" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

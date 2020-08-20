@@ -1,0 +1,489 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link REL="stylesheet" href="styles/default.css" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-report" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <style>
+        {$containerCss}
+      </style>
+      {BEGIN supertop_block}
+        <NAV class="navbar navbar-default bs-fullwidth-navbar" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}">
+          <SPAN data-cellId="supertop_c" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+            {BEGIN logo_block}
+              <A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>
+                {$logo}
+              </A>
+            {END logo_block}
+            <BUTTON data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">
+              <SPAN class="sr-only">
+                Toggle navigation
+              </span>
+              <SPAN class="icon-bar">
+              </span>
+            </button>
+          </span>
+          <SPAN data-cellId="supertop_c" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+            {$menu main horizontal}
+          </span>
+          <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button">
+            {BEGIN loggedas_message}
+              <span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}">
+                <SPAN class="dropdown">
+                  <BUTTON type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <SPAN class="glyphicon glyphicon-user">
+                    </span>
+                    {$username}
+                    <SPAN class="caret">
+                    </span>
+                  </button>
+                  <UL class="dropdown-menu">
+                    {BEGIN logoutbutton}
+                      <li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" >
+                        <a  href="#" {$logoutlink_attrs} >
+                          Desconectarse
+                        </a>
+                      </li>
+                    {END logoutbutton}
+                    {BEGIN adminarea_link}
+                      <li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" >
+                        <a  href="admin_rights_list.php" >
+                          Area Admin
+                        </a>
+                      </li>
+                    {END adminarea_link}
+                    {BEGIN changepwd_link}
+                      <li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" >
+                        <a  href="#" {$changepwdlink_attrs} >
+                          Cambiar contraseña
+                        </a>
+                      </li>
+                    {END changepwd_link}
+                  </ul>
+                </span>
+              </span>
+            {END loggedas_message}
+          </span>
+          <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login">
+            {BEGIN guestloginbutton}
+              <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}">
+                <A type="button" class="btn btn-primary" href="#" {$guestloginlink_attrs}>
+                  Conectar
+                </a>
+              </span>
+            {END guestloginbutton}
+          </span>
+          <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options">
+            <span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}">
+              <SPAN class="dropdown">
+                <BUTTON type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <SPAN class="glyphicon glyphicon-cog">
+                  </span>
+                  <SPAN class="caret">
+                  </span>
+                </button>
+                <UL class="dropdown-menu">
+                  <li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" >
+                    <a   href="Reporte_Estadistico_search.php" {$advsearchlink_attrs} >
+                      Búsqueda avanzada
+                    </a>
+                  </li>
+                  {BEGIN searchPanelTopButtons}
+                    <li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" >
+                      <a  id="showOptPanel{$id}" >
+                        Mostrar panel de búsqueda
+                      </a>
+                    </li>
+                  {END searchPanelTopButtons}
+                  {BEGIN searchPanelTopButtons}
+                    <li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" >
+                      <a  id="hideOptPanel{$id}" >
+                        Ocultar panel de búsqueda
+                      </a>
+                    </li>
+                  {END searchPanelTopButtons}
+                  <LI role="separator" class="divider">
+                  </li>
+                  <li data-itemtype="export_report_excel" data-itemid="export_report_excel" {$item_export_report_excel} data-pageid="{$pageid}" >
+                    <a  href="Reporte_Estadistico_export.php?all=1&amp;format=excel" {$excellink_attrs} >
+                      Exportar a Excel
+                    </a>
+                  </li>
+                  <li data-itemtype="export_report_word" data-itemid="export_report_word" {$item_export_report_word} data-pageid="{$pageid}" >
+                    <a  href="Reporte_Estadistico_export.php?all=1&amp;format=word" {$wordlink_attrs} >
+                      Exportar a Word
+                    </a>
+                  </li>
+                </ul>
+              </span>
+            </span>
+          </span>
+          <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search">
+            <SPAN data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+              <DIV class="input-group">
+                {BEGIN searchform_text}
+                  <INPUT type="search" class="form-control" {$searchfor_attrs} size="25">
+                {END searchform_text}
+                <SPAN class="input-group-btn">
+                  {BEGIN searchform_showall}
+                    <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+                      <SPAN class="glyphicon glyphicon-remove">
+                      </span>
+                    </button>
+                  {END searchform_showall}
+                  {BEGIN searchform_search}
+                    <BUTTON {$searchbutton_attrs} class="btn btn-primary">
+                      <SPAN class="glyphicon glyphicon-search">
+                      </span>
+                    </button>
+                  {END searchform_search}
+                </span>
+              </div>
+            </span>
+          </span>
+        </nav>
+      {END supertop_block}
+      <DIV class="bs-middle">
+        <DIV class="bs-topmiddle clearfix">
+          {BEGIN top_block}
+            <DIV class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}">
+              <DIV class="row">
+                <DIV data-cellId="top_c" data-pageid="{$pageid}" {$cell_top_c} class="col-md-12">
+                  {BEGIN breadcrumb}
+                    <OL class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+                      <li >
+                        <a href="{$crumb_home_link}">
+                          <SPAN class="glyphicon glyphicon-home">
+                          </span>
+                        </a>
+                        {$crumb_dropdown}
+                      </li>
+                      {BEGIN crumb}
+                        <LI class="{$crumb_item_class}">
+                          {BEGIN crumb_title_link}
+                            <a {$crumb_attrs}>
+                              {$crumb_title}
+                            </a>
+                          {END crumb_title_link}
+                          {BEGIN crumb_title_span}
+                            <span {$crumb_attrs}>
+                              {$crumb_title}
+                            </span>
+                          {END crumb_title_span}
+                          {$crumb_dropdown}
+                        </li>
+                      {END crumb}
+                    </ol>
+                  {END breadcrumb}
+                </div>
+              </div>
+            </div>
+          {END top_block}
+        </div>
+        <DIV class="bs-left" {$blockattr_left} {$form_left}>
+          {BEGIN left_block}
+            <TABLE class="r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}">
+              <tbody>
+                <tr>
+                  <TD class=" r-ori-vert" data-cellId="left_c" data-pageid="{$pageid}">
+              <TBODY>
+                <TR>
+                  <DIV class="searchOptions panel panel-primary searchPanelContainer" {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}">
+                    <!-- Search panel content -->
+                    <DIV class="panel-heading">
+                      <DIV class="btn-group" id="addSearchFieldButton{$id}">
+                        <BUTTON id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Búsqueda
+                          <SPAN class="caret">
+                          </span>
+                        </button>
+                      </div>
+                      <DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+                        <BUTTON type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <SPAN class="glyphicon glyphicon glyphicon-option-vertical">
+                          </span>
+                        </button>
+                        <UL class="dropdown-menu dropdown-left">
+                          <li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}>
+                            <a>
+                              Mostrar opciones
+                            </a>
+                          </li>
+                          <LI role="separator" class="divider">
+                          </li>
+                          <LI class="srchCritTop" style="display: none;">
+                            <a>
+                              <input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}>
+                              <label for="radioAll">
+                                <SPAN class="glyphicon">
+                                  &nbsp;
+                                </span>
+                                todas las condiciones
+                              </label>
+                            </a>
+                          </li>
+                          <LI class="srchCritTop" style="display: none;">
+                            <a>
+                              <input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}>
+                              <label for="radioAny">
+                                <SPAN class="glyphicon">
+                                  &nbsp;
+                                </span>
+                                cualquier condición
+                              </label>
+                            </a>
+                          </li>
+                          <LI role="separator" class="divider">
+                          </li>
+                          <li>
+                            <A class="close-button">
+                              <SPAN class="glyphicon glyphicon-remove">
+                                &nbsp;
+                              </span>
+                              esconder
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+                      {BEGIN searchCtrlBlock}
+                        <DIV class="srchPanelRow form-group" {$filterRow_attrs}>
+                          <label>
+                            {$fLabel}
+                          </label>
+                          {$delCtrlButt}
+                          <SPAN class="rnr-searchtype">
+                            {$searchtype}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol1}
+                          </span>
+                        </div>
+                      {END searchCtrlBlock}
+                      {BEGIN searchCtrlBlock_Proceso}
+                        <DIV class="form-group srchPanelRow {$filterRow_class_Proceso}" {$filterRow_attrs_Proceso}>
+                          <label>
+                            {$label Reporte_Estadistico Proceso}
+                          </label>
+                          {$delCtrlButt}
+                          <SPAN class="rnr-searchtype">
+                            {$searchtype_Proceso}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol_Proceso}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol1_Proceso}
+                          </span>
+                        </div>
+                      {END searchCtrlBlock_Proceso}
+                      {BEGIN searchCtrlBlock_Departamento}
+                        <DIV class="form-group srchPanelRow {$filterRow_class_Departamento}" {$filterRow_attrs_Departamento}>
+                          <label>
+                            {$label Reporte_Estadistico Departamento}
+                          </label>
+                          {$delCtrlButt}
+                          <SPAN class="rnr-searchtype">
+                            {$searchtype_Departamento}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol_Departamento}
+                          </span>
+                          <SPAN class="rnr-searchcontrol">
+                            {$searchcontrol1_Departamento}
+                          </span>
+                        </div>
+                      {END searchCtrlBlock_Departamento}
+                    </div>
+                    <DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+                      <BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>
+                        Buscar
+                      </button>
+                      <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+                        Mostrar todo
+                      </button>
+                    </div>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          {END left_block}
+        </div>
+        <DIV class="bs-center bs-screenwidth bs-minwidth">
+          {BEGIN above-grid_block}
+            <DIV class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}">
+              <DIV class="row">
+                <DIV data-cellId="above-grid_c" data-pageid="{$pageid}" {$cell_above-grid_c} class="col-md-6">
+                  {BEGIN firstAboveGridCell}
+                  {END firstAboveGridCell}
+                </div>
+                <DIV data-cellId="above-grid_c3" data-pageid="{$pageid}" {$cell_above-grid_c3} class="r-align-right col-md-6">
+                  <span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" >
+                    {$records_indicator}
+                  </span>
+                  <span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+                    {$grpsPerPage}
+                  </span>
+                  {BEGIN print_friendly}
+                    <SPAN class="bs-printpanel" id="printpanelblock{$id}" data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+                      <BUTTON title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <SPAN class="glyphicon glyphicon-print">
+                        </span>
+                        <SPAN class="caret">
+                        </span>
+                      </button>
+                      <UL class="dropdown-menu pull-right">
+                        <LI class="container-fluid">
+                          <div id="print_friendly_scope{$id}">
+                            <DIV class="row">
+                              <DIV class="col-md-4">
+                                Rango:
+                              </div>
+                              {BEGIN print_friendly_all}
+                                <DIV class="col-md-8">
+                                  <label for="printAll{$id}">
+                                    <input type="radio" id="printAll{$id}" data-href="Reporte_Estadistico_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+                                    Imprimir informe completo
+                                  </label>
+                                </div>
+                              {END print_friendly_all}
+                            </div>
+                            <DIV class="row">
+                              <DIV class="col-md-4">
+                                &nbsp;
+                              </div>
+                              <DIV class="col-md-8">
+                                <label for="printPage{$id}">
+                                  <input name="printScope" id="printPage{$id}" type="radio" checked data-href="Reporte_Estadistico_print.php?{$crosstable_attrs}">
+                                  Imprimir esta página
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <LI class="divider" role="separator">
+                        </li>
+                        <LI class="container-fluid">
+                          <div>
+                            <label for="printPerPage{$id}">
+                              Grupos por página
+                            </label>
+                            <INPUT type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">
+                          </div>
+                        </li>
+                        <LI class="divider" role="separator">
+                        </li>
+                        <LI class="container-fluid">
+                          <span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}">
+                            <A type="button" class="btn btn-primary" id="print_friendly_button{$id}">
+                              Imprimir
+                            </a>
+                          </span>
+                        </li>
+                      </ul>
+                    </span>
+                  {END print_friendly}
+                </div>
+              </div>
+            </div>
+          {END above-grid_block}
+          <DIV class="bs-grid">
+            {BEGIN grid_block}
+              {BEGIN grid_tabs}
+                <UL class="nav nav-tabs">
+                  {$grid_tabs_content}
+                </UL>
+              {END grid_tabs}
+              <style>
+                td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+                background-color: #ffffbb;
+                }
+                td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+                }
+              </style>
+              <!-- 0 group fields -->
+              <!-- add to settings ? -->
+              <TABLE class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" style="background-color:#fff;">
+                <thead>
+                  <TR class="rnr-toprow table-header style1">
+                    <th>
+                      {$label Reporte_Estadistico Proceso}
+                    </th>
+                    <th>
+                      {$label Reporte_Estadistico Departamento}
+                    </th>
+                    <th>
+                      {$label Reporte_Estadistico Aprobados}
+                    </th>
+                    <th>
+                      {$label Reporte_Estadistico Rechazados}
+                    </th>
+                    <th>
+                      {$label Reporte_Estadistico Obsoletos}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {BEGIN grid_row}
+                    {BEGIN row_data}
+                      <TR class="rnr-row style1" {$rowattrs}>
+                        <td {$recordattrs}>
+                          {$Proceso_value}
+                        </td>
+                        <td {$recordattrs}>
+                          {$Departamento_value}
+                        </td>
+                        <td {$recordattrs}>
+                          {$Aprobados_value}
+                        </td>
+                        <td {$recordattrs}>
+                          {$Rechazados_value}
+                        </td>
+                        <td {$recordattrs}>
+                          {$Obsoletos_value}
+                        </td>
+                      </tr>
+                    {END row_data}
+                  {END grid_row}
+                </tbody>
+              </table>
+            {END grid_block}
+          </div>
+          {BEGIN below-grid_block}
+            <DIV class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}">
+              <DIV class="row">
+                <DIV data-cellId="below-grid_c" data-pageid="{$pageid}" {$cell_below-grid_c} class="r-align-center col-md-12">
+                  {BEGIN pagination_block}
+                    <span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+                      {$pagination}
+                    </span>
+                  {END pagination_block}
+                </div>
+              </div>
+            </div>
+          {END below-grid_block}
+        </div>
+      </div>
+      {$footer}
+    {END body}
+  </body>
+</html>
