@@ -1,5 +1,5 @@
 <P align="center"><BR></P> 
-<TABLE align="center" width="95%" border="1" cellspacing="1" cellpadding="1" style="color:#fff;">
+<TABLE align="center" width="95%" border="1" cellspacing="1" cellpadding="1">
   <TBODY>
   <TR>
     <TD>&nbsp;Municipalidad de Puerto Cortés &copy; 2020</TD>

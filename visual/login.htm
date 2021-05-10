@@ -101,6 +101,20 @@
                       <DIV edit-form-cell class="clearfix">
                       </div>
                     </td>
+                    <TD class="r-ori-vert col-md-6" data-single data-cellId="grid_c11" data-pageid="{$pageid}">
+                      <DIV edit-form-cell class="clearfix">
+                        <DIV class="checkbox r-edit-field" data-itemtype="remember_password" data-itemid="remember_password" {$item_remember_password} data-pageid="{$pageid}">
+                          <label>
+                            <input type="checkbox" {$rememberbox_attrs}>
+                            {BEGIN remember_password_label}
+                              <span>
+                                Recordarme
+                              </span>
+                            {END remember_password_label}
+                          </label>
+                        </div>
+                      </div>
+                    </td>
                     <TD class="col-md-2">
                     </td>
                   </tr>
