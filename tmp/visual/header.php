@@ -5,7 +5,7 @@
   <div class="row" style="margin-bottom: 15px;">
     <div class="col-xs-12">
       <div class="col-md-2 col-xs-12 center-xs">
-        <img src="images/logo1.png" style="width: 120px; height: 120px;">
+        <img src="images/logompc.png" style="width: 120px; height: 120px;">
       </div>
       <div class="col-md-10 col-xs-12 center-xs">
         <h1 style="font-family: 'Crete Round', serif;">MUNICIPALIDAD DE PUERTO CORTÉS</h1>

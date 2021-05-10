@@ -7,7 +7,7 @@
       <DIV align="center"><a href="https://www.ampuertocortes.hn" target="_blank">www.ampuertocortes.hn</a></DIV></TD>
     <TD>
       <DIV align="right">Desarrollo e Innovación               
-      Tecnológica versión 1.0&nbsp;</DIV>
+      Tecnológica&nbsp;</DIV>
     </TD>
   </TR>
   <TR>
