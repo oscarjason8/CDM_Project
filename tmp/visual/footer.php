@@ -2,7 +2,7 @@
 <TABLE align="center" width="95%" border="1" cellspacing="1" cellpadding="1">
   <TBODY>
   <TR>
-    <TD>&nbsp;Municipalidad de Puerto Cortés &copy; 2020</TD>
+    <TD>&nbsp;Municipalidad de Puerto Cortés &copy; 2021</TD>
     <TD>
       <DIV align="center"><a href="https://www.ampuertocortes.hn" target="_blank">www.ampuertocortes.hn</a></DIV></TD>
     <TD>
